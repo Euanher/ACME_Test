@@ -46,7 +46,7 @@ namespace WebApllication2
                 return RedirectToAction("Index");
             }
 
-            return View(movie);
+            return View(employee);
         }
 
       
@@ -96,8 +96,8 @@ namespace WebApllication2
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-           Employee employee = db.Movies.Find(id);
-            db.Employee.Remove(movie);
+           Employee employee = db.Employee.Find(id);
+            db.Employee.Remove(employee);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
