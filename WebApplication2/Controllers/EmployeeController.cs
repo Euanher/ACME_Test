@@ -41,7 +41,7 @@ namespace WebApllication2
         {
             if (ModelState.IsValid)
             {
-                db.Movies.Add(employee);
+                db.Employee.Add(employee);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
